@@ -25,7 +25,7 @@ public class Main {
         int hash = 0;
 
         for (int i = 0; i < (number.length()-1); i++) {
-             if (number.charAt(i) == number.charAt(i + 1)) {
+            if (number.charAt(i) == number.charAt(i + 1)) {
                 hash += (number.charAt(i) - 48);
             }
         }
