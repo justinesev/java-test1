@@ -18,7 +18,7 @@ public class Main {
 //
 //        lets the user input their credit card number
 //        outputs the hash
-        
+
         System.out.print("Please enter your credit card number: ");
         String number = sc.next();
 
