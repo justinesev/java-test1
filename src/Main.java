@@ -21,7 +21,7 @@ public class Main {
             palindrome += logo.charAt(i);
         }
 
-        System.out.println(palindrome);
+
         if (logo.equals(palindrome)) {
             System.out.println("yes");
         } else System.out.println("no");
