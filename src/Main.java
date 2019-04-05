@@ -5,28 +5,31 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-//        Task 4: Branding
-//        Now that we have a hip logo, let's work on our business name.
-//        Nowadays all cool brand names are palindromes - words or sentences that read the same from both ends.
-//        For example: "level", "step on no pets". We should make our company name palindromic as well, and we should do it quick!
+//        Task 5: Mobile market
+//        With the brand all set up, you decided to make a run in the smartphone app market.
+//        You outsourced the development of your mobile app, but of course the company tasked with it was incompetent.
+//        Credit card encryption is seriously flawed and it is up to you to fix it.
+//        You decide to pick the current top-notch encryption algorithm which goes like this:
+//
+//        Looking at the credit card number digit-by-digit create a single "hash" by summing together all digits that are
+//        followed by the same digit.
 //
 //        Create an application that:
-//        prints if your user input is a palindrome or not
+//
+//        lets the user input their credit card number
+//        outputs the hash
+        
+        System.out.print("Please enter your credit card number: ");
+        String number = sc.next();
 
-        System.out.print("Write your logo version: ");
-        String logo = sc.nextLine();
-        String palindrome = "";
+        int hash = 0;
 
-        for (int i = (logo.length() - 1); i >= 0; i--) {
-            palindrome += logo.charAt(i);
+        for (int i = 0; i < (number.length()-1); i++) {
+             if (number.charAt(i) == number.charAt(i + 1)) {
+                hash += (number.charAt(i) - 48);
+            }
         }
-
-        System.out.println(palindrome);
-        if (logo.equals(palindrome)) {
-            System.out.println("yes");
-        } else System.out.println("no");
-
-
+        System.out.println(hash);
     }
 }
 
