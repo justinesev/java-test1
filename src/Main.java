@@ -25,8 +25,6 @@ public class Main {
         if (logo.equals(palindrome)) {
             System.out.println("yes");
         } else System.out.println("no");
-
-
     }
 }
 
